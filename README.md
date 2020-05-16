@@ -3,8 +3,11 @@ Interact with APIs to identify the average number of words in an artists songs
 
 # Setup
 Create and activate new Python virtual environment:
+
 python3 -m virtualenv test
+
 cd test
+
 source bin/activate
 
 Clone repository into current directory:
