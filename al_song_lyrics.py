@@ -24,9 +24,13 @@ SONGS_DF = pd.DataFrame(columns=["Song title", "Song release year", "Artist","Nu
 
 app = dash.Dash()
 <<<<<<< HEAD
+<<<<<<< HEAD
 server = app.server
 =======
 >>>>>>> d2ea585d... Initial launch
+=======
+server = app.server
+>>>>>>> 6008864c... fixed missing app server line
 
 app.layout = html.Div([
     html.H1('Lyric count by artist information - Fergus McLellan'),
@@ -283,7 +287,11 @@ def output(n_clicks, artists):
 
 if __name__ == '__main__':
 <<<<<<< HEAD
+<<<<<<< HEAD
     app.run_server()
 =======
     app.run_server(host='0.0.0.0')
 >>>>>>> d2ea585d... Initial launch
+=======
+    app.run_server()
+>>>>>>> 6008864c... fixed missing app server line
