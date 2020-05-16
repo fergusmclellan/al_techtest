@@ -7,15 +7,18 @@ python3 -m virtualenv test
 cd test
 source bin/activate
 
-Clone repository into current directory
+Clone repository into current directory:
+
 git clone https://github.com/fergusmclellan/al_techtest.git
 
 cd al_techtest/
 
-Install python libraries
+Install python libraries:
+
 pip install -r requirements.txt
 
-Launch web server using gunicorn
+Launch web server using gunicorn:
+
 gunicorn al_song_lyrics:server -b 0.0.0.0:8050
 (change port as required)
 
