@@ -19,15 +19,22 @@ Launch web server using gunicorn
 gunicorn al_song_lyrics:server -b 0.0.0.0:8050
 (change port as required)
 
-# Running copy of the application
+Or to run directly using the Dash/Flask web server
+1) comment out the line "server = app.server" in al_song_lyrics.py
+2) Run: python al_song_lyrics.py
+
+(Gunicorn can take slightly longer to startup.)
+
+# A running copy of the application is available
 A working copy of the application is currently running on Heroku:
 https://al-song-lyrics.herokuapp.com/
 Please note, Heroku is free, and the application can be slightly sluggish, so please bear with it.
 
 # Usage
-1) Simply enter the artist or artists into the text box and click on the Submit button. 
-2) If entering more than one artist in the text box, separate artist names using a comma.
-3) If multiple artists are entered, the dashboard will take longer to retrieve artist and lyric information.
+1) Open your web browser, and point it at the IP address/name of your web server and the port specified 
+2) Simply enter the artist or artists into the text box and click on the Submit button. 
+3) If entering more than one artist in the text box, separate artist names using a comma.
+4) If multiple artists are entered, the dashboard will take longer to retrieve artist and lyric information.
 
 Output:
 1) Mean number of lyrics per artist, variance and standard deviation are displayed in the first table.
